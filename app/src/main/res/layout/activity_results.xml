@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ResultsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="32dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil Pengecekan"
+            android:textSize="24sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="menunjukkan bahwa"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_light"
+            android:textAlignment="center"
+            android:textColor="@color/colorSecondary"/>
+
+        <TextView
+            android:id="@+id/tulisanNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:maxLines="2"
+            android:text="xxx mengalami"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_light"
+            android:textAlignment="center"
+            android:textColor="@color/colorSecondary"/>
+
+        <TextView
+            android:id="@+id/keracunanThreshold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keracunan Threshold x (xx%)"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/colorSecondary"/>
+
+        <TextView
+            android:id="@+id/tulisanMinimalDugaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:maxLines="2"
+            android:text="Keracunan di bawah minimal dugaan (Threshold : xx)"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_light"
+            android:textAlignment="center"
+            android:textColor="@color/colorSecondary"/>
+
+        <TextView
+            android:id="@+id/keracunanLainnya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8sp"
+            android:text="Keracunan x (xx%)"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="@color/colorSecondary"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <LinearLayout
+            android:id="@+id/retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_area"
+            android:orientation="vertical"
+            android:layout_margin="14dp"
+            android:padding="14dp"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_retry_white_32dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ulangi \nPengecekkan"
+                android:textColor="@color/colorLight"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
